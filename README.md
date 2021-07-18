@@ -77,3 +77,15 @@ for i = A.length-1 downto 1
   remove last element of A
   Max-heapify(A, 0)
 ```
+## Max-heap-increase-key(A, i, key)
+```
+A[i] = key
+while i > 0 and A[PARENT(i)] < A[i]
+  exchange A[i] with A[PARENT(i)]
+  i = PARENT(i)
+```
+## Max-heap-insert(A, key)
+```
+append key to last element of A
+Heap-increase-key(A, A.length-1, key)
+```
