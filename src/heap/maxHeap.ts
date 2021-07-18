@@ -41,7 +41,7 @@ export default class MaxHeap {
   public heap_increase_key(i:number, key: number) {
     this.h[i] = key;
     const arr = this.h;
-    while (i > 0 && arr[this.parent(i)] > arr[i]) {
+    while (i > 0 && arr[this.parent(i)] < arr[i]) {
       [arr[i], arr[this.parent(i)]] = [ arr[this.parent(i)], arr[i]]
       i = this.parent(i)
     }

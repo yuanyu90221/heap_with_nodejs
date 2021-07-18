@@ -13,6 +13,7 @@ while(minHeap.len()>=1) {
   console.log(minHeap.pop());
 }
 maxHeap.build_max_heap(arr);
+maxHeap.insert(9);
 console.log("MaxHeap loop");
 while(maxHeap.len()>=1) {
   console.log(maxHeap.pop());
